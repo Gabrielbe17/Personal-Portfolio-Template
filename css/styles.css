@@ -17,6 +17,7 @@ html{
     /* font-size: 10px; */
     scroll-behavior: smooth;
 
+
 }
 body{
 
@@ -106,7 +107,10 @@ nav ul li{
         url(../images/tech.jpg) no-repeat center;
         background-size: cover;
         color: var(--color-primary);
-
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
@@ -123,7 +127,7 @@ nav ul li{
 }
 .intro .intro-text{
     font-size: 1.2rem;
-    color: #d40f1fd8;
+    color: #fa1326d8;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -152,7 +156,6 @@ nav ul li{
 .btn i{
 
     margin-left: .3rem;
-
 }
 
 .btn{
@@ -163,17 +166,16 @@ nav ul li{
     padding: .5rem 1rem;
     border-radius: 5px;
     background-color: transparent;
-    transition: all .5s;
+    transition-property: background, color;
+    transition-duration: .5s;
     margin-bottom: 1rem;
 
 }
 .intro .btn:hover{
 
     background-color: #fff;
-    color: #020200;
-    transform: rotateY(90deg);
+    color: var(--secondary-color);
 }
-
 
 
 
@@ -208,6 +210,11 @@ nav ul li{
     text-align: center;
     line-height: 1.8rem;
     margin-top: 1rem;
+}
+
+.about-text{
+
+    padding: 10px;
 }
 #about h2{
 
@@ -244,7 +251,7 @@ nav ul li{
 .testimonial-box{
 
     /* width: 50%; */
-    background-color: rgba(131, 69, 52, 0.308);
+    background-color: rgba(247, 17, 67, 0.37);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -268,7 +275,13 @@ nav ul li{
 
     border-radius: 50%;
     margin: 1.2rem 0;
-    width:30%
+    width:30%;
+    transition: transform .3s;
+
+}
+.testimonial-portrait:hover{
+
+    transform: scale(1.3);
 
 }
 .testimonial-box p {
@@ -394,4 +407,3 @@ nav ul li{
         font-size: 1.2rem;
     }
 }
-
